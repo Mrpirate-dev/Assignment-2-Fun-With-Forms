@@ -1,0 +1,29 @@
+p { margin: 10px 0; }
+.header { background-color: #f2f2f2; padding: 20px; font-family: Arial, sans-serif;}
+ 
+ 
+ 
+fieldset {background-color: rgb(242, 242, 234); width: auto; margin-right: 100px; margin-bottom: 20px; padding: 10px; border: 1px solid #acaaaa; }
+ 
+div { margin-top: 20px; }
+ 
+/* #CardNumber { margin-left: 130px; }
+#ExparationDate { margin-left: 116px; }
+#name{ display:inline-block; margin-left: 100px; }
+#Address{ margin-left: 70px; }
+#City{ margin-left: 110px; }
+#State_Province{ margin-left: 100px; }
+#Postal_Code{ margin-left: 100px; }
+ */
+ 
+input[type="text"] { width: 250px; padding: 5px; border: 1px solid #acaaaa; }
+select { width: 262px; padding: 5px; }
+label { display: inline-block; width: 130px; text-align: right; margin-right: 10px; font-weight: bold; }
+input[type="radio"] + label, #sameAsBilling + label { width: auto; text-align: left; margin-right: 15px; font-weight: normal; }
+#sameAsBilling {text-align: left; margin-left: 144px; }
+#submitForm { margin-left: 157px; padding: 5px 20px; }
+ 
+/* Validation messages */
+label.error { display: block; width: auto; text-align: left; margin-left: 144px; color: red; font-weight: normal; }
+input.error, select.error { border: 1px solid red; }
+input:disabled { background-color: #cccccc; }
