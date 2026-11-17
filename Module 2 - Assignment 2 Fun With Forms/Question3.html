@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+
+    // DataTables styling
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+
+    // jQuery and DataTables
+
+    <script src="jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+    <!--
+--Group Members--
+Anthony Hamilton
+Nickolas Williams
+-->
+<h1>Employee Table</h1>
+
+<table id="employeeTable" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Start Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+</table>
+<script>
+$(document).ready(function() {
+    $("#employeeTable").DataTable({
+        // Load the data from the JSON file ({ "data": [ ... ] })
+        ajax: "MOCK_DATA.json",
+        // Match each column to a key in the JSON
+         columns: [
+            { data: "id" },
+            { data: "name" },
+            { data: "email" },
+            { data: "department" },
+            { data: "position" },
+            { data: "office" },
+            { data: "start_date" },
+            { data: "status" }
+        ]
+    });
+    });
+</script>
+</body>
+</html>
