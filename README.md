@@ -10,3 +10,5 @@ question1.html parses the JSON with JSON.parse() and shows the employees as a bu
 Running the project
 
 Open question1.html or Question2.html in a web browser. Keep all of the files together in the same folder. The form is a demonstration only, so nothing is saved or sent anywhere.
+
+Question3.html uses jQuery DataTables to load the employee records from MOCK_DATA.json into a searchable, sortable table this line
